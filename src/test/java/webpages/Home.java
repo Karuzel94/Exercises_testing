@@ -1,4 +1,4 @@
-package com.mercury.webpages;
+package webpages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

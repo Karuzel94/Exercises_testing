@@ -1,12 +1,12 @@
-package com.mercury.webpages;
+package webpages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class Home extends BasePage {
+public class ContactUs extends BasePage {
 
-    public Home(WebDriver driver) {
+    public ContactUs(WebDriver driver){
         super(driver);
     }
 
@@ -25,25 +25,21 @@ public class Home extends BasePage {
     @FindBy(xpath = "//span[text()='Specialized Tours']")
     WebElement tours;
 
-    public void clickHome() {
+
+    public void clickHome(){
         click(home);
     }
-
-    public void clickCoaches() {
+    public void clickCoaches(){
         click(coaches);
     }
-
-    public void clickContact() {
+    public void clickContact(){
         click(contact);
     }
-
-    public void clickSF() {
+    public void clickSF(){
         click(sf);
     }
-
-    public void clickSpecializedTours() {
+    public void clickSpecializedTours(){
         click(tours);
-
     }
 
 }
