@@ -9,10 +9,7 @@ public class BasicTest extends BaseTest {
     }
 
     public void firstTest() {
-
         setup();
-
     }
-
 
 }
