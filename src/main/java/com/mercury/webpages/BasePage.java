@@ -9,7 +9,7 @@ public class BasePage {
 
     private int time = 5;
     protected WebDriver driver;
-    protected WebElement element;
+    //protected WebElement element;
     protected WebDriverWait w;
 
     public BasePage(WebDriver driver){
@@ -19,7 +19,6 @@ public class BasePage {
 
     public void checkingVisibility(WebElement element) {
         w.until(ExpectedConditions.visibilityOf(element));
-
     }
 
     public void click(WebElement element){

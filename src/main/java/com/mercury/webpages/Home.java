@@ -3,11 +3,13 @@ package com.mercury.webpages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class Home extends BasePage {
 
     public Home(WebDriver driver) {
         super(driver);
+        PageFactory.initElements(driver, this);
     }
 
     @FindBy(xpath = "//span[text()='Home']")
@@ -41,9 +43,6 @@ public class Home extends BasePage {
         click(sf);
     }
 
-    public void clickSpecializedTours() {
-        click(tours);
-
-    }
+    public void clickSpecializedTours() { click(tours); }
 
 }
