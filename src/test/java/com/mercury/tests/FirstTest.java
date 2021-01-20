@@ -16,6 +16,23 @@ public class FirstTest {
 
     WebDriver driver;
 
+    @BeforeTest
+    public static void setupClass() {
+        WebDriverManager.chromedriver().setup();
+    }
+
+    @BeforeClass
+    public void setupTest() {
+        driver = new ChromeDriver();
+    }
+
+    @AfterClass
+    public void teardown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
+
     @Test
     public void firstTest() {
         // Driver settings
